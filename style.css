@@ -48,18 +48,18 @@
 
 /* Hero section with centered content */
 .bgimage {
-    height: 100vh;
+    min-height: 100vh;
     background: url('images/heroImage.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 2rem;
-    position: relative;
+    padding: 2rem 1rem;
 }
+
 
 .bgimage::before {
     content: "";
@@ -80,33 +80,35 @@
 
 /* Circle image */
 .circle-image {
-    width: 300px;
-    height: 280px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
 }
 
+
 /* Hero text */
 .hero-text {
     color: black;
-    max-width: 800px;
-    margin-top: 1rem;
+    max-width: 90%;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
 }
 
 .hero_title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-top: 1.5rem;
     font-family: 'Dancing Script', cursive;
+    margin-bottom: 0.5rem;
 }
 
 .hero_desc {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-    padding: 0 1rem;
+    font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
+    padding: 0 1rem;
 }
+
 
 /* Contact section */
 #contact {
