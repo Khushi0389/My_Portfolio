@@ -225,7 +225,35 @@
     color: #333;
 }
 
-/* Make navbar toggler icon (3 lines) black */
+/* Force black toggler icon */
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: none !important;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: 0.3em;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0.3em;
+}
+
+.navbar-toggler-icon div {
+    top: 50%;
+    transform: translateY(-50%);
 }
