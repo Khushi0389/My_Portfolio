@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Khushi's Portfolio Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- linking css file -->
+        <link rel="stylesheet" href="style.css">
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand&display=swap" rel="stylesheet">
+
+      </head>
+<body>
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <div class="container">
+        <a class="navbar-brand" href="#">Khushi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Coursework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- main banner -->
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <!-- New image -->
+                <img src="images/circle.jpeg" class="circle-image" alt="Circle Image">
+
+                <!-- Adjusted heading and paragraph -->
+                <h2 class="hero_title">Hi, it's me Khushi</h2>
+                <p class="hero_desc">I am a student delving into technology. Explore this Portfolio for my projects in web development, software engineering, Android app development,
+                     and data analytics, showcasing innovation and continual learning. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- about section-->
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+            </div>
+
+            <div class="col-lg-8">
+                <p>
+    I am a motivated and versatile individual with a strong foundation in computer science and a passion for continuous learning. Currently pursuing my M.Tech in Computer Science at Maulana Azad National Institute of Technology, Bhopal. I have gained hands-on experience through internships in web development, software testing, and natural language processing. I enjoy building meaningful projects that bridge theoretical knowledge with real-world applications.
+</p>
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Name: Khushi Gupta</li>
+                            <li>Age: 23</li>
+                            <li>Currently a Student</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Internship experience in various domains.</li>
+                            <li>Familiar with data structures, algorithms</li>
+                            <li>Proficient in Java, C, web development, Android Development</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                   <p>
+    Driven by a desire to apply theoretical concepts in practical scenarios, I have developed a range of personal projects in areas like web development, Android app development, software engineering, and data analytics. These experiences reflect my enthusiasm for problem-solving and innovation. Beyond academics, I have pursued certifications in Machine Learning, SQL, Software Engineering, and Google Data Analytics to stay aligned with current industry trends and continuously expand my skill set.
+</p>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- services section-->
+<section id="services">
+    <div class="container">
+        <h1 class="text-center">Coursework</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Google Data Analytics</h4>
+                        <p class="card-text mt-3">This course equips learners with essential skills in data analysis using tools like SQL, R, Tableau, and spreadsheets.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/google-data-analytics.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Machine Learning</h4>
+                        <p class="card-text mt-3">Introduction to supervised and unsupervised learning, neural networks, and hands-on exercises using Octave or MATLAB.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/machine-learning.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Version Control by Meta</h4>
+                        <p class="card-text mt-3">Advanced Git/GitHub skills including branching, merging, and managing team projects.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/version-control.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">Data Visualization with Power BI</h4>
+                        <p class="card-text mt-3">Learned how to build interactive dashboards and visuals for data-driven insights using Microsoft Power BI.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/power-bi.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-brain'></i>
+                        <h4 class="card-title mt-3">Deep Learning for Developers</h4>
+                        <p class="card-text mt-3">Gained insights into building and training deep neural networks using industry tools and frameworks.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/deep-learning.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-code'></i>
+                        <h4 class="card-title mt-3">Coding for Everyone: C and C++</h4>
+                        <p class="card-text mt-3">Learned programming fundamentals, data structures, and problem-solving using C and C++.</p>
+                        <div class="text-center">
+                            <a href="images/certificates/c-cpp.jpg" class="btn btn-success mt-2" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- portfolio section-->
+<section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/http_server.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">HTTP Server using C++</h4>
+                        <p class="card-text">A multithreaded, persistent HTTP server built from scratch using sockets in C++.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/cpp-http-server" class="btn btn-success" target="_blank">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/social-media.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Social Media App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/SnapSocial" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/journal.jpeg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">DailyLog - Journal App</h4>
+                        <p class="card-text">A personal journaling application built using Spring Boot and MySQL backend.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/DailyLog" class="btn btn-success" target="_blank">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Student Management App</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/TeachTrack" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/smart_move.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">SmartMove</h4>
+                        <p class="card-text">An Android-based fitness tracking and recommendation app designed for smart living.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/SmartMove-HAR-Project" class="btn btn-success" target="_blank">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 d-flex">
+    <div class="card h-100">
+        <img class="card-img-top" src="images/clustering.png" alt="Clustering Analysis" style="width:100%">
+        <div class="card-body d-flex flex-column">
+            <h4 class="card-title">Clustering Analysis</h4>
+            <p class="card-text">Exploratory data analysis and clustering implementation using Python on real-world datasets.</p>
+            <div class="text-center mt-auto">
+                <a href="https://github.com/Khushi0389/ClusteringAnalysis" class="btn btn-success" target="_blank">Link</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+        <br>
+        <div class="row">
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/skill_match_ai.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">SkillMatch-AI</h4>
+                        <p class="card-text">A smart resume and job matching tool using Streamlit and OpenAI integration.</p>
+                        <div class="text-center">
+                            <a href="https://github.com/Khushi0389/skillmatch-ai" class="btn btn-success" target="_blank">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/chat1.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Chatbot using AWS</h4>
+                        <p class="card-text">This HotelBookingBot is integrated with facebookand WhatsApp.</p>
+                        <div class="text-center">
+                            <a href="https://www.facebook.com/profile.php?id=61553286394216" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="images/best-qr-code-generator.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">QR code Generator using JavaScript</h4>
+                        <p class="card-text">Generate QR codes seamlessly with JS.</p>
+                        <div class="text-center">
+                            <a href="https://khushi0389.github.io/qr-code-generator/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- resume download section -->
+<section id="resume" class="text-center mt-5">
+    <div class="container">
+        <h2 class="mb-4">Download My CV</h2>
+        <a href="files/Khushi_Gupta_CV.pdf" class="btn btn-outline-success btn-lg" download>
+            <i class="fas fa-arrow-down"></i> Download CV
+        </a>
+    </div>
+</section>
+
+
+
+
+<!-- contact section-->
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-center">Contact Me</h1>
+
+        <div class="row mt-4">
+            <div class="col-lg-6">
+                <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                    <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Tezpur, Sonitpur, Assam, India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                        </iframe>
+                    </div>
+                    <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                    <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                    </style>
+                </div>
+            </div>
+
+           <div class="col-lg-6">
+    <!-- functional contact form using FormSubmit -->
+    <form action="https://formsubmit.co/khushigupta10857@gmail.com" method="POST">
+        <!-- honeypot field to prevent spam -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+        <input type="text" name="name" class="form-control form-control-lg" placeholder="Name" required>
+        <input type="email" name="email" class="form-control mt-3" placeholder="Email" required>
+        <input type="text" name="subject" class="form-control mt-3" placeholder="Subject">
+        <div class="mb-3 mt-3">
+            <textarea name="message" class="form-control" rows="5" placeholder="Project Details" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+    </form>
+</div>
+
+
+        </div>
+    </div>
+</section>
+ <!-- footer section-->
+ <footer id="footer">
+    <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/khushi-gupta-844195300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Khushi0389" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <!-- load javascript after loading all html content -->
+  <script src="script/script.js"></script>
+
+</body>
+</html>

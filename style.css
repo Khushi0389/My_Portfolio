@@ -1,0 +1,224 @@
+/* Navbar default brand styling */
+.navbar .navbar-brand {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand:hover {
+    color: #f7a1c4 !important;
+}
+
+/* Navbar links before scroll */
+.navbar .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f7a1c4;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Navbar background after scroll */
+.navbarScroll.navbarDark {
+    background-color: #f7a1c4 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar text after scroll */
+.navbarScroll.navbarDark .navbar-nav .nav-link,
+.navbarScroll.navbarDark .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbarScroll.navbarDark .nav-link::after {
+    background-color: #ffffff;
+}
+
+/* Hero section with centered content */
+.bgimage {
+    height: 100vh;
+    background: url('images/heroImage.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.bgimage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* semi-transparent overlay */
+    z-index: 0;
+}
+
+/* Bring hero content above overlay */
+.bgimage > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Circle image */
+.circle-image {
+    width: 300px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Hero text */
+.hero-text {
+    color: black;
+    max-width: 800px;
+    margin-top: 1rem;
+}
+
+.hero_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.hero_desc {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Contact section */
+#contact {
+    padding-bottom: 4rem;
+}
+
+/* About image */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* Services section cards */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card:hover .servicesIcon {
+    color: #008000;
+}
+
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* Portfolio card layout */
+.card.portfolioContent,
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body .btn {
+    margin-top: auto;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Social media icons */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+    color: #008000;
+}
+
+.fab {
+    color: #000000;
+}
+#resume {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#resume h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+#resume a.btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#resume a.btn:hover {
+    background-color: #f7a1c4;
+    color: white;
+    border-color: #f7a1c4;
+}
+
+
+
+/* Footer */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+/* Content sections background */
+#about,
+#services,
+#portfolio,
+#contact {
+    background-color: #dbe9e4;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #333;
+}
