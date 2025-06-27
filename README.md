@@ -9,6 +9,7 @@ This is my personal portfolio website built with HTML, CSS, JavaScript, and Boot
 ## 📁 Project Structure
 
 My_Portfolio/
+
 ├── index.html # Main homepage
 
 ├── style.css # Custom CSS styles
