@@ -10,13 +10,20 @@ This is my personal portfolio website built with HTML, CSS, JavaScript, and Boot
 
 My_Portfolio/
 ├── index.html # Main homepage
+
 ├── style.css # Custom CSS styles
+
 ├── script/script.js # JS for navbar behavior
+
 ├── thankyou.html # Thank you page after contact form submission
+
 ├── redirect.html # Redirect handler for FormSubmit
+
 ├── files/
 │ └── Khushi_Gupta_CV.pdf # Resume/CV download
+
 ├── images/ # Project and UI images
+
 └── README.md # Project info and instructions
 
 
