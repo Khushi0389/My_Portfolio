@@ -1,19 +1,39 @@
-// add class navbarDark on navbar scroll
+// Navbar scroll behavior
 const header = document.querySelector('.navbar');
-console.log(header)
-window.onscroll = function() {
+window.onscroll = function () {
     const top = window.scrollY;
-    if(top >=100) {
+    if (top >= 100) {
         header.classList.add('navbarDark');
-    }
-    else {
+    } else {
         header.classList.remove('navbarDark');
     }
-}
-// collapse navbar after click on small devices
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
+};
 
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
-})
+// Collapse navbar on mobile after clicking a link
+const navLinks = document.querySelectorAll('.nav-item');
+const menuToggle = document.getElementById('navbarSupportedContent');
+
+navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        new bootstrap.Collapse(menuToggle).toggle();
+    });
+});
+
+// EmailJS form submission and redirect to thankyou.html
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.querySelector('form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_ricwxlt', 'template_o4lmbuo', this)
+                .then(() => {
+                    // Redirect to thank you page after successful email send
+                    window.location.href = 'thankyou.html';
+                }, (error) => {
+                    console.error('FAILED...', error);
+                    alert('Failed to send message. Please try again.');
+                });
+        });
+    }
+});
